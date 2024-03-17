@@ -353,6 +353,7 @@
 "Assets/Script/DirectMoving.cs"
 "Assets/Script/LevelController.cs"
 "Assets/Script/RepeatingBackground.cs"
+"Assets/Script/StartGame.cs"
 -langversion:9.0
 
 /deterministic
