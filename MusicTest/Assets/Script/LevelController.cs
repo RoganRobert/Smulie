@@ -2,19 +2,6 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-#region Serializable classes
-[System.Serializable]
-public class EnemyWaves 
-{
-    [Tooltip("time for wave generation from the moment the game started")]
-    public float timeToStart;
-
-    [Tooltip("Enemy wave's prefab")]
-    public GameObject wave;
-
-}
-
-#endregion
 
 public class LevelController : MonoBehaviour {
 
@@ -29,11 +16,11 @@ public class LevelController : MonoBehaviour {
     {
         mainCamera = Camera.main;
 
-        StartCoroutine(PlanetsCreation());
+        StartCoroutine(PointsCreation());
     }
     
 
-    IEnumerator PlanetsCreation()
+    IEnumerator PointsCreation()
     {
         //Create a new list copying the arrey
         for (int i = 0; i < points.Length; i++)
